@@ -36,7 +36,7 @@ buildConfigFile() {
 	echo "Your config file for the ${HOST} host is available under ${OUTPUT_CONFIG_FILE}"
 }
 
-while getopts ":h:d:o:" options; do
+while getopts "h:d:o:" options; do
   case $options in
     o ) OUTPUT_CONFIG_FILE=$OPTARG          
         ;;
