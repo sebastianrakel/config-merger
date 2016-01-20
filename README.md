@@ -11,9 +11,17 @@ At build it will take each \*.conf file and build it together, except there is a
 ## Usage
 
 ```
-Config Merger
-    -d directory with input files
-    -o output config file
+usage: config-merger.py [-h] [--verbose] confd_directory output_filename
 
-./config-merger.sh -d ~/.config/i3/conf.d -o ~/.config/i3/config
+merge configs from one dir to one great config file
+
+positional arguments:
+  confd_directory  conf.d directory with configfiles
+  output_filename  output config filename
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --verbose        print verbose output
+
+config-merger.py ~/.config/i3/conf.d ~/.config/i3/config
 ```
