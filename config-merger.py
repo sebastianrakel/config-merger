@@ -24,6 +24,7 @@ def get_config_files(config_files_dir, verbose):
     result_config_files = []
 
     founded_config_files = glob.glob(os.path.join(config_files_dir,"*.conf"))
+    founded_config_files += glob.glob(os.path.join(config_files_dir, "*.%s" % hostname))
 
     founded_config_files.sort()
 
